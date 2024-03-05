@@ -9,17 +9,20 @@ public class PositiveNegativeNumber {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
-        if (number > 0) {
+        check(number);
+    }
+
+    private static void check(int num) {
+        if (num > 0) {
             System.out.println("number is positive");
         }
 
-        else if (number < 0) {
+        else if (num < 0) {
             System.out.println("number is negative");
         }
 
         else{
             System.out.println("number is zero");
         }
-
     }
 }
