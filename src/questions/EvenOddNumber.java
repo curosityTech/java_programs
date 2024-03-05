@@ -7,6 +7,10 @@ public class EvenOddNumber {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
 
+        check(number);
+    }
+
+    private static void check(int number) {
         if (number % 2 == 0) {
             System.out.println("number is even");
         }
