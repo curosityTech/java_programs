@@ -10,6 +10,10 @@ public class GreatestOfTwoNumbers {
         System.out.print("Enter 2nd number: ");
         int b = scan.nextInt();
 
+        check(a, b);
+    }
+
+    private static void check(int a, int b) {
         if(a>b) {
             System.out.println(a + " is greatest between two");
         }
