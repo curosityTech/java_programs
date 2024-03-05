@@ -1,5 +1,6 @@
 package questions;
 import java.util.Scanner;
+// Same method is used to find the sum of N natural numbers.
 public class SumOfFirstNNaturalNumber {
     public static void main(String[] args) {
 
