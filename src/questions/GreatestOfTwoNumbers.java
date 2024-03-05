@@ -13,12 +13,12 @@ public class GreatestOfTwoNumbers {
         check(a, b);
     }
 
-    private static void check(int a, int b) {
-        if(a>b) {
-            System.out.println(a + " is greatest between two");
+    private static void check(int num1, int num2) {
+        if(num1>num2) {
+            System.out.println(num1 + " is greatest between two");
         }
-        else if (a<b) {
-            System.out.println(b + " is greatest between two");
+        else if (num1<num2) {
+            System.out.println(num2 + " is greatest between two");
         }
 
         else{
