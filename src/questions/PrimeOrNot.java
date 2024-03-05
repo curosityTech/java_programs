@@ -6,9 +6,9 @@ public class PrimeOrNot {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("enter number: ");
-        int num = scan.nextInt();
+        int a = scan.nextInt();
 
-        check(num);
+        check(a);
     }
 
     private static void check(int num) {
