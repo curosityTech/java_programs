@@ -1,5 +1,6 @@
 package questions;
 import java.util.Scanner;
+import static java.lang.Math.min;
 
 public class FindingHCF {
     public static void main(String[] args) {
@@ -18,7 +19,9 @@ public class FindingHCF {
     private static int print(int a, int b) {
         int hcf = 0;
 
-        for(int i=1; i<=a || i<=b; i++) {
+        int minValue = min(a, b);
+
+        for(int i=1; i<= minValue; i++) {
             if(a%i==0 && b%i==0) {
                 hcf = i;
             }
