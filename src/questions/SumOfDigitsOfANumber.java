@@ -7,6 +7,8 @@ public class SumOfDigitsOfANumber {
 
         int num = scan.nextInt();
 
+        scan.close();
+
         sum(num);
     }
 

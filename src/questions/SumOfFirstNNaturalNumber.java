@@ -8,6 +8,8 @@ public class SumOfFirstNNaturalNumber {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
 
+        scan.close();
+
         int total = sum(number);
 
         System.out.println(total);

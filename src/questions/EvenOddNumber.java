@@ -7,6 +7,8 @@ public class EvenOddNumber {
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
 
+        scan.close();
+
         check(number);
     }
 

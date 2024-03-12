@@ -12,6 +12,8 @@ public class FindingLCM {
         System.out.print("enter second number: ");
         int b = scan.nextInt();
 
+        scan.close();
+
         int lcm = print(a, b);
         System.out.println(lcm);
     }

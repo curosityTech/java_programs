@@ -12,6 +12,8 @@ public class PrimeNumberInAGivenRange {
         System.out.print("enter last number: ");
         int last_num = scan.nextInt();
 
+        scan.close();
+
         for(int i=first_num; i<=last_num; i++) {
             print(i);
         }

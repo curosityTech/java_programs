@@ -9,6 +9,8 @@ public class PrimeOrNot {
         System.out.print("enter number: ");
         int a = scan.nextInt();
 
+        scan.close();
+
         check(a);
     }
 

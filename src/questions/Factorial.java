@@ -8,6 +8,8 @@ public class Factorial {
         System.out.print("enter number: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         int total = fact(number);
         System.out.println(total);
     }

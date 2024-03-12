@@ -12,6 +12,8 @@ public class FindingHCF {
         System.out.print("enter second number: ");
         int b = scan.nextInt();
 
+        scan.close();
+
         int hcf = print(a, b);
         System.out.println(hcf);
     }

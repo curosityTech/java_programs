@@ -8,6 +8,8 @@ public class StrongNumber {
         int number = scan.nextInt();
         int checkStrong = check(number);
 
+        scan.close();
+
         if (number == checkStrong) {
             System.out.println("It is a strong number");
         }

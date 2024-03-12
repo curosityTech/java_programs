@@ -10,6 +10,8 @@ public class ArmstrongNumber {
         System.out.print("enter number: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         acquiredValue = check(number);
 
         if(acquiredValue == number) {

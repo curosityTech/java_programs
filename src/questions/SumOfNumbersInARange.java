@@ -9,6 +9,8 @@ public class SumOfNumbersInARange {
         System.out.print("Enter second number: ");
         int b = scan.nextInt();
 
+        scan.close();
+
         int total = check(a, b);
         System.out.println(total);
     }

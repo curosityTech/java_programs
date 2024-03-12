@@ -9,6 +9,8 @@ public class PositiveNegativeNumber {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
+        input.close();
+
         check(number);
     }
 

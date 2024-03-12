@@ -10,6 +10,8 @@ public class PerfectSquare {
         System.out.print("enter number: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         check(number);
     }
 

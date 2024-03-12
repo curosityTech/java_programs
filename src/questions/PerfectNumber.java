@@ -7,6 +7,8 @@ public class PerfectNumber {
         System.out.print("enter number: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         int check = sum(number);
 
         if(check == number) {

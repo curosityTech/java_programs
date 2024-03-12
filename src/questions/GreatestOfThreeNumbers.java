@@ -13,6 +13,8 @@ public class GreatestOfThreeNumbers {
         System.out.print("enter 3rd number: ");
         int c = scan.nextInt();
 
+        scan.close();
+
         check(a, b, c);
     }
 

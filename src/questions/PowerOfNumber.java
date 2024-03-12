@@ -11,6 +11,8 @@ public class PowerOfNumber {
         System.out.print("enter power: ");
         int power = scan.nextInt();
 
+        scan.close();
+
         int total = power(base, power);
         System.out.println(total);
     }

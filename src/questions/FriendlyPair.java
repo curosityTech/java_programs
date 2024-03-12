@@ -11,6 +11,8 @@ public class FriendlyPair {
         System.out.print("enter second number: ");
         int b = scan.nextInt();
 
+        scan.close();
+
         int totalA = check(a);
         int totalB = check(b);
 

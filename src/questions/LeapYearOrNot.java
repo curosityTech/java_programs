@@ -8,6 +8,8 @@ public class LeapYearOrNot {
 
         int year = scan.nextInt();
 
+        scan.close();
+
         check(year);
 
     }

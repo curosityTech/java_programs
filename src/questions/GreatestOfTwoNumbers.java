@@ -10,6 +10,8 @@ public class GreatestOfTwoNumbers {
         System.out.print("Enter 2nd number: ");
         int b = scan.nextInt();
 
+        scan.close();
+
         check(a, b);
     }
 

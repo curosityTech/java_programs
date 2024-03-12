@@ -8,6 +8,8 @@ public class FactorsOfNumber {
         System.out.print("enter the number whose factors you need to find: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         factors(number);
     }
 

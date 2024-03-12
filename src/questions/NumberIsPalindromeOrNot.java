@@ -8,6 +8,8 @@ public class NumberIsPalindromeOrNot {
         System.out.print("Enter number: ");
         int number = scan.nextInt();
 
+        scan.close();
+
         check(number);
     }
 
