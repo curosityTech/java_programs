@@ -1,5 +1,6 @@
 package questions;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class CharacterIsAVowelOrConsonant {
     public static void main(String[] args) {
@@ -14,12 +15,17 @@ public class CharacterIsAVowelOrConsonant {
     }
 
     private static void check(char letter) {
-        if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
+        // Define the regex pattern for alphabets
+        String regex = "[aeiouAEIOU]";
+
+        boolean isCharacterVowel = Pattern.matches(regex, Character.toString(letter));
+
+        if(isCharacterVowel) {
             System.out.println("Character is vowel");
         }
-
         else{
             System.out.println("Character is consonant");
         }
+
     }
 }
