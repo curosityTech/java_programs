@@ -1,0 +1,31 @@
+package questions;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+// scan.next() to read the input string, which reads only one token (word) from the input. If the input string contains spaces, it will only read the characters before the first space.
+public class RemoveSpacesFromString {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("enter string: ");
+        String s = scan.nextLine();
+
+        StringBuilder toggleString = toggleStringUsingRegex(s);
+        System.out.println(toggleString);
+    }
+
+    private static StringBuilder toggleStringUsingRegex(String s) {
+        String regex = "\\s";
+        StringBuilder s1 = new StringBuilder();
+
+        for(int i=0; i<s.length(); i++) {
+             char ch = s.charAt(i);
+
+             if(!Pattern.matches(regex, Character.toString(ch))) {
+                 s1.append(ch);
+             }
+        }
+        return s1;
+    }
+}
+
