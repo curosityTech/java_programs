@@ -17,6 +17,10 @@ public class CharacterIsAlphabetOrNot {
 
         scan.close();
 
+        check(letter);
+    }
+
+    private static void check(char letter) {
         // Define the regex pattern for alphabets
         String regex = "[a-zA-Z]";
 
