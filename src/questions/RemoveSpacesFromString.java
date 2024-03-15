@@ -11,7 +11,10 @@ public class RemoveSpacesFromString {
         String s = scan.nextLine();
 
         StringBuilder toggleString = toggleStringUsingRegex(s);
-        System.out.println(toggleString);
+        System.out.println("toggle string: " + toggleString);
+
+        String replaceString = replace(s);
+        System.out.println("replace string: " + replaceString);
     }
 
     private static StringBuilder toggleStringUsingRegex(String s) {
@@ -26,6 +29,10 @@ public class RemoveSpacesFromString {
              }
         }
         return s1;
+    }
+
+    private static String replace(String s) {
+        return s.replaceAll("\\s", "");
     }
 }
 
