@@ -10,7 +10,10 @@ public class RemoveCharacterExceptAlphabetsFromString {
         String s = scan.next();
 
         StringBuilder toggleString = toggleString(s);
-        System.out.println("new string: " + toggleString);
+        System.out.println("toggle string: " + toggleString);
+
+        String replaceString = replace(s);
+        System.out.println("replace string: " + replaceString);
 
     }
 
@@ -26,5 +29,10 @@ public class RemoveCharacterExceptAlphabetsFromString {
             }
         }
         return s1;
+    }
+
+    private static String replace(String s) {
+        // ^ inside the square brackets [] represents negation, matching any character not in the specified range.
+        return s.replaceAll("[^a-zA-Z]", "");
     }
 }
