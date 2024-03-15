@@ -6,12 +6,13 @@ When you call toCharArray() on a String, it returns an array of characters conta
 Each character of the string corresponds to an element in the character array.
  */
 
+// scan.next() to read the input string, which reads only one token (word) from the input. If the input string contains spaces, it will only read the characters before the first space.
 public class LengthOfString {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("enter string: ");
-        String s = scan.next();
+        String s = scan.nextLine();
 
         int length = length(s);
         System.out.print("length is: " + length);

@@ -8,12 +8,13 @@ This can be inefficient, especially in large loops, as it can lead to a large nu
 To mitigate this performance issue, you can use StringBuilder class, which provides a more efficient way to concatenate strings, particularly in loops.
  */
 
+// scan.next() to read the input string, which reads only one token (word) from the input. If the input string contains spaces, it will only read the characters before the first space.
 public class ToggleCharacterInString {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("enter string: ");
-        String s1 = scan.next();
+        String s1 = scan.nextLine();
 
         StringBuilder toggleString = toggle(s1);
         System.out.println("toggle string: " + toggleString);

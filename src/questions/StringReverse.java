@@ -1,12 +1,13 @@
 package questions;
 import java.util.Scanner;
 
+// scan.next() to read the input string, which reads only one token (word) from the input. If the input string contains spaces, it will only read the characters before the first space.
 public class StringReverse {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("enter string: ");
-        String s = scan.next();
+        String s = scan.nextLine();
 
         StringBuilder s1 = reverse(s);
         System.out.println("reverse string: " + s1);
