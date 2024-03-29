@@ -22,11 +22,11 @@ public class SortTheArray {
             numbers[i] = scan.nextInt();
         }
 
-        int[] reverseArray = Arrays.copyOf(numbers, size);
-        Arrays.sort(reverseArray);
+        int[] sortedArray = Arrays.copyOf(numbers, size);
+        Arrays.sort(sortedArray);
 
         for(int i=0;i<size;i++) {
-            System.out.println(reverseArray[i]);
+            System.out.println(sortedArray[i]);
         }
     }
 }
