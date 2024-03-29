@@ -1,5 +1,6 @@
 package questions;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,8 +19,15 @@ public class FrequencyOfElementsInArray {
             numbers[i] = scan.nextInt();
         }
 
+        processUsingList(size, numbers);
+        processUsingHashMap(numbers);
+
+    }
+
+    private static void processUsingList(int size, int[] numbers) {
         List<Integer> list = new ArrayList<>();
 
+        System.out.println("answer using list method: ");
         for(int i = 0; i < size; i++) {
             int elementToCheck = numbers[i];
             int count = 0;
@@ -34,5 +42,25 @@ public class FrequencyOfElementsInArray {
                 System.out.println(elementToCheck + " appears " + count + " times.");
             }
         }
+    }
+
+    private static void processUsingHashMap(int[] numbers) {
+        HashMap<Integer, Integer> frequencyMap = new HashMap<>();
+
+        for(int element : numbers) {
+            if(frequencyMap.containsKey(element)) {
+                frequencyMap.put(element, frequencyMap.get(element)+1);
+            }
+            else {
+                frequencyMap.put(element, 1);
+            }
+        }
+
+        System.out.println();
+        System.out.println("answer using hashMap method: ");
+        for(int key : frequencyMap.keySet()) {
+            System.out.println(key + " appears " + frequencyMap.get(key) + " times");
+        }
+
     }
 }
